@@ -1,0 +1,17 @@
+# Railway Configuration File
+[build]
+builder = "heroku.buildpacks"
+
+[[build.buildpacks]]
+url = "heroku/nodejs"
+
+[env]
+# Database Configuration
+MONGODB_URI = "mongodb+srv://tumelolekhabunyane1_db_user:kzHRuqN0zr16s0V9@cluster66.2vflmei.mongodb.net/?appName=Cluster66"
+
+# Authentication
+JWT_SECRET = "shuttle-dev-secret-key-change-in-production-12345"
+NEXT_PUBLIC_API_URL = "http://localhost:3000"
+
+# Maps
+NEXT_PUBLIC_MAPBOX_TOKEN = "your_mapbox_token_here"
